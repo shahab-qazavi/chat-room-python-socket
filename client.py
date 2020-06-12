@@ -9,7 +9,7 @@ try:
     client_host = socket.gethostname()
     ip = socket.gethostbyname(client_host)
     print(colored('%s (%s)\n', 'blue') % (client_host, ip))
-    other_side_host = input(str('Enter server address that you want to connect : '))
+    other_side_host = input(str('Enter server address that you want to connect to : '))
     name = input(str('\nEnter your name : '))
     port = 8585
     print(colored('\nTrying to connect to %s (%s) please wait...\n', 'cyan') % (other_side_host, port))
